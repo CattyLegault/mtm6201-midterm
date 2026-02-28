@@ -1,27 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C Legault - Midterm</title>
     <!-- css -->
-     <link rel="stylesheet" href="./css/main.css">
-     <!-- fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header and skip links -->
     <header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+      <div class="container">
+        <nav class="skip-links">
+          <li><a href="#nav" id="nav"></a>Skip to nav</li>
+          <li><a href="#main" id="main"></a>Skip to main content</li>
         </nav>
+      </div>
+      <div class="site-header">
+        <nav role="navigation" class="main-nav">
+          <ul id="navigation">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
-</body>
+    <main role="main" class="main-content">
+        <div class="banner" role="banner">
+        <img src=".images/hero-background.jpg" alt="woman making a latte with machine">
+      </div>
+    </main>
+  </body>
 </html>
