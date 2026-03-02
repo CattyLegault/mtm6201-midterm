@@ -1,3 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 
 /* fonts */
 .lato-thin {
@@ -9,12 +139,6 @@
 .lato-light {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-style: normal;
-}
-
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -67,8 +191,98 @@
   font-style: normal;
 }
 
-/* background color */
+/* background color and heading color/content */
 body {
   background-color: #f3f0e9;
 }
 
+.site-header {
+  background-color: black;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* font sizes for mobile */
+
+h1 {
+  font-size: 2.027rem;
+}
+
+h2 {
+  font-size: 1.802rem;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* make the skip links accessible and responsive */
+
+.container .skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -50%;
+  background-color: black;
+  color: white;
+  padding: .5em 1em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+/* make the main navigation match the mobile example */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.main-nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  padding: 1rem;
+  margin: 0;
+  
+}
+
+.main-nav ul li a:focus {
+  outline: 4px solid white;
+}
+
+.main-nav ul li a:hover{
+  text-decoration: underline;
+}
+
+/* header logo */
+.logo-svg {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
+/* svg cards with content at the bottom - styling */
+
+   .st0 {
+    fill: #d69e3d;
+   }
