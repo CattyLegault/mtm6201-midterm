@@ -357,7 +357,7 @@ p {
    .card-1-container svg {
     width: 45%;
     display: flex;
-    align-items: center;
+    justify-items: center;
    }
 
    .card-1-container h3 {
@@ -378,7 +378,16 @@ p {
     width: 100%;
    }
 
+   .banner-sizes::after {
+    background-color: black;
+    opacity: 0.4;
+   }
+
    /* styling the about us section to make it responsive */
+
+   .about-container {
+    display: grid;
+   }
 
    .about-img img {
     width: 100%;
@@ -392,6 +401,7 @@ p {
    .about-content h2 {
     font-size: xx-large;
     margin-left: 1rem;
+    padding-bottom: 1rem;
    }
 
    .about-content p {
@@ -454,4 +464,40 @@ p {
 
 @media screen and (min-width: 768px) {
 
+  /* changing the grid style for the gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 10px;
+    grid-template-areas: 
+    "top top left1 right1"
+    "top top left2 right2";
+  }
+
+  /* fix the about section when scaling up */
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-content {
+    padding-right: 1rem;
+    margin-right: 2rem;
+  }
+
+  .about-img img {
+    width: 80%;
+    padding-left: 3rem;
+  }
+
+  /* testimonials styling when scaling up */
+
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
