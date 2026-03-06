@@ -232,19 +232,21 @@ p {
 
 /* hero banner and text section */
 
-.hero-image img {
+.hero-banner {
+  height: 100vh;
   width: 100%;
-}
-
-.hero-image {
-  width: 100%;
-  position: relative;
-  background-size: cover;
+  background-image: url("../images/hero-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-image::before { 
+.hero-banner::before { 
   content: "";
   position: absolute;
   top: 0;
@@ -254,15 +256,15 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   }
 
-.hero-content {
-  position: absolute;
+  .hero-content {
   text-align: center;
-  color: white;
-  top: 100%;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   line-height: 1.4;
-}
+  transform: translate(-50%, -50%);
+  color: white;
+  }
 
 .hero-button {
   background-color: black;
@@ -362,6 +364,10 @@ p {
   margin: 1rem;
 }
 
+.cards h2 {
+  font-size: larger;
+}
+
 .fair-trade {
   width: 30%;
  display: flex;
@@ -411,7 +417,7 @@ p {
 /* menu and location styling */
 
 .banner-sizes {
-  width: 100%;
+  width: 100vh;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -426,6 +432,48 @@ p {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .secondary-content {
+    position: absolute;
+    text-align: center;
+    margin-right: 1rem;
+    bottom: 30%;
+    right: 10%;
+    color: white;
+    line-height: 1.5;
+  }
+
+  .menu {
+    padding-bottom: 1rem;
+  }
+
+  .location {
+    padding-top: 1rem;
+  }
+
+  .location h3 {
+    color: #d69e3d;
+    font-size: large;
+  }
+
+  .menu h3 {
+    color: #d69e3d;
+    font-size: large;
+  }
+
+  .menu-button {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-weight: 400;
+    border: none;
+    transition: 0.2s;
+  }
+
+  .menu-button:hover {
+    color: black;
+    background-color: white;
   }
 
   /* styling the about us section */
@@ -492,7 +540,7 @@ p {
       color: white;
       margin-left: 1.5rem;
       padding-bottom: 3rem;
-      margin-right: 10rem;
+      margin-right: 4rem;
     }
 
     .testimonial-cards {
@@ -605,6 +653,171 @@ p {
     padding: 2rem;
     }
 
-    @media screen and (min-width: 768px) {
-      
+    @media screen and (min-width: 768px)  {
+
+    /* adjust gallery layout */
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px; 
+      grid-template-areas: 
+     "latte latte bean pour"
+     "latte latte cup smile";
+     padding: 1rem;
+  }
+
+  /* adjust the SVG card sizing */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 1rem;
+    }
+
+    .cards h2 {
+      font-size: x-large;
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+    }
+
+    .card-3-container {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .card-2-container {
+      grid-column: 3;
+    }
+
+    .fair-trade {
+      width: 50%;
+    }
+
+    .baked-goods {
+      width: 50%;
+    }
+
+    .made-love {
+      width: 5cm;
+    }
+
+    .card-1-container p {
+    font-size: small;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.25rem;
+}
+
+.card-2-container p {
+  font-size: small;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+.card-3-container p {
+  font-size: small;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+/* about us scale and styling */
+  .about-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+  }
+
+  .about-content p {
+    font-size: small;
+  }
+
+  /* scaling the testimonials */
+
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 4rem;
+  }
+
+  .testimonial-cards p {
+    font-size: small;
+  }
+
+  /* adjust the footer */
+  .footer-content {
+    text-align: center;
+    font-size: small;
+  }
+  }
+
+    @media screen and (min-width: 1100px) {
+      /* fix the navigation section */
+      .site-header {
+        display: flex;
+      }
+
+      .logo-svg {
+        margin-left: 0.75rem;
+      }
+
+      .main-nav ul li a {
+        display: flex;
+        font-size: small;
+        justify-content: flex-end;
+      }
+
+      /* fix the hero banner and content */
+
+      /* adjust gallery padding */
+      .gallery {
+        padding: 2rem;
+      }
+
+      /* adjust the svg card section */
+      .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .card-3-container p {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .card-2-container p {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .card-1-container p {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .card-3-container {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+     .card-2-container {
+      grid-column: 2;
+    }
+
+    /* adjust the about us section*/
+    .about-img {
+      padding: 3rem;
+    }
+
+    .about-content {
+      padding-top: 3rem;
+      margin-right: 2rem;
+    }
+
     }
