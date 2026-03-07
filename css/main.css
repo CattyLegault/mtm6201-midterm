@@ -193,7 +193,7 @@ p {
 /* make the main navigation match the mobile example */
 .main-nav {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .main-nav ul {
@@ -208,9 +208,9 @@ p {
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 1.25rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  font-size: medium;
   font-style: bold;
   padding: 1rem;
   margin: 0; 
@@ -261,6 +261,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-right: 0.25rem;
   line-height: 1.4;
   transform: translate(-50%, -50%);
   color: white;
@@ -279,6 +280,7 @@ p {
 .hero-button:hover {
   background-color: white;
   color: black;
+  transform: scale(1.2);
 }
 
 /* gallery section to be styled */
@@ -305,9 +307,10 @@ p {
 }
 
 .content-headings h2 {
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 2rem;
   margin-left: 0.5rem;
+  margin-right: 10rem;
 }
 
 .gallery {
@@ -365,28 +368,29 @@ p {
 }
 
 .cards h2 {
-  font-size: larger;
+  font-size: xx-large;
+  padding: 0.5rem;
 }
 
 .fair-trade {
   width: 30%;
  display: flex;
  justify-self: anchor-center;
- padding: 2rem;
+ padding: 1rem;
 }
 
 .baked-goods {
   width: 30%;
   display: flex;
   justify-self: anchor-center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .made-love {
   width: 30%;
   display: flex;
   justify-self: anchor-center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card-1-container + .card-2-container + .card-3-container {
@@ -394,24 +398,30 @@ p {
 }
 
 .card-1-container p {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 3rem;
+  padding-top: 0.5rem;
+  margin-right: 3rem;
   font-size: large;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .card-2-container p {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   font-size: large;
   text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .card-3-container p {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   font-size: large;
   text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 /* menu and location styling */
@@ -437,24 +447,34 @@ p {
   .secondary-content {
     position: absolute;
     text-align: center;
+    font-weight: 800;
     margin-right: 1rem;
-    bottom: 30%;
+    bottom: 15%;
     right: 10%;
     color: white;
     line-height: 1.5;
+    padding-top: 1rem;
   }
 
   .menu {
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .menu h2 {
+    padding-bottom: 2rem;
   }
 
   .location {
-    padding-top: 1rem;
+    padding-top: 0.75rem;
   }
 
   .location h3 {
     color: #d69e3d;
     font-size: large;
+  }
+
+  .location h2 {
+    padding-bottom: 2rem;
   }
 
   .menu h3 {
@@ -463,23 +483,30 @@ p {
   }
 
   .menu-button {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 1rem;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 600;
     border: none;
     transition: 0.2s;
   }
 
   .menu-button:hover {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    transform: scale(1.1);
   }
 
   /* styling the about us section */
 
   .about-img img {
     width: 100%;
+  }
+
+  .about-img {
+    margin: 1rem;
   }
 
   .about-content h3 {
@@ -519,6 +546,7 @@ p {
     background-color: white;
     color: black;
     border: 2px solid #d69e3d;
+    transform: scale(1.2);
   }
   
   /* adjust the testimonials color and style */
@@ -570,31 +598,52 @@ p {
 .test-card-1 p {
   position: absolute;
   color: white;
-  top: 90%;
+  top: 87%;
   left: 35%;
   font-size: large;
   transform: translate(-50%, -50%);
   line-height: 1.4;
+}
+
+.test-card-1 p:last-child {
+  color: #d69e3d;
+  top: 94%;
+  left: 17%;
+  font-size: x-large;
 }
 
 .test-card-2 p {
   position: absolute;
   color: white;
-  top: 90%;
+  top: 87%;
   left: 35%;
   font-size: large;
   transform: translate(-50%, -50%);
   line-height: 1.4;
 }
 
+.test-card-2 p:last-child {
+  color: #d69e3d;
+  top: 95%;
+  left: 17%;
+  font-size: x-large;
+}
+
 .test-card-3 p {
   position: absolute;
   color: white;
-  top: 90%;
+  top: 89%;
   left: 35%;
   font-size: large;
   transform: translate(-50%, -50%);
   line-height: 1.4;
+}
+
+.test-card-3 p:last-child {
+  color: #d69e3d;
+  top: 94%;
+  left: 17%;
+  font-size: x-large;
 }
 
  .test-card-1::before { 
@@ -722,6 +771,88 @@ p {
   padding-top: 0.25rem;
 }
 
+.test-card-1 p {
+  position: absolute;
+  color: white;
+  top: 80%;
+  left: 35%;
+  font-size: large;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+}
+
+.test-card-1 p:last-child {
+  color: #d69e3d;
+  top: 94%;
+  left: 23%;
+  font-size: large;
+}
+
+.test-card-2 p {
+  position: absolute;
+  color: white;
+  top: 78%;
+  left: 35%;
+  font-size: large;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+}
+
+.test-card-2 p:last-child {
+  color: #d69e3d;
+  top: 93%;
+  left: 23%;
+  font-size: large;
+}
+
+.test-card-3 p {
+  position: absolute;
+  color: white;
+  top: 78%;
+  left: 36%;
+  font-size: large;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+}
+
+.test-card-3 p:last-child {
+  color: #d69e3d;
+  top: 93%;
+  left: 24%;
+  font-size: large;
+}
+
+/* adjust the second banner with the two buttons */
+
+.secondary-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 2rem;
+}
+
+.banner-sizes {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-sizes::before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .location {
+    padding-top: 0;
+    margin-left: 4rem;
+  }
+
 /* about us scale and styling */
   .about-container {
     padding-top: 1.5rem;
@@ -782,7 +913,7 @@ p {
       .cards {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin: 1rem;
+      margin: 2rem;
       padding-bottom: 2rem;
     }
 
@@ -820,4 +951,61 @@ p {
       margin-right: 2rem;
     }
 
-    }
+    /* adjust the testimonials section */
+     .testimonials {
+      padding: 3rem;
+     }
+
+  .test-card-1 p {
+  position: absolute;
+  color: white;
+  top: 80%;
+  left: 38%;
+  font-size: medium;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.test-card-1 p:last-child {
+  color: #d69e3d;
+  top: 94%;
+  left: 27%;
+  font-size: x-large;
+}
+
+.test-card-2 p {
+  position: absolute;
+  color: white;
+  top: 78%;
+  left: 35%;
+  font-size: medium;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+}
+
+.test-card-2 p:last-child {
+  color: #d69e3d;
+  top: 93%;
+  left: 26%;
+  font-size: x-large;
+}
+
+.test-card-3 p {
+  position: absolute;
+  color: white;
+  top: 78%;
+  left: 36%;
+  font-size: medium;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+}
+
+.test-card-3 p:last-child {
+  color: #d69e3d;
+  top: 93%;
+  left: 26%;
+  font-size: x-large;
+}
+
+}

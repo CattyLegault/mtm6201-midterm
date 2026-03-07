@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- header and skip links along with the svg of the logo, making it responsive-->
-    <header>
+    <header itemprop="header">
       <div class="container">
         <nav class="skip-links">
           <li><a href="#nav" id="nav"></a>Skip to nav</li>
@@ -26,7 +26,7 @@
         <div class="logo-svg">
           <a href="#"><img src="./images/my-coffee-shop-logo.svg" alt="an svg logo of the coffee shop"></a>
         </div>
-        <nav role="navigation" class="main-nav">
+        <nav itemprop="nav" role="navigation" class="main-nav">
           <ul id="nav">
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">MENU</a></li>
@@ -37,7 +37,7 @@
     </header>
     <!-- displaying the main content with the hero banner - this also needs to be accessible -->
     <main role="main" class="main-content">
-      <section id="main">
+      <section itemprop="main" id="main">
         <div class="hero-banner" role="banner">
           <div itemprop="name" class="hero-content">
           <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
@@ -48,8 +48,8 @@
         </div>
       </section>
       <!-- gallery of images along with the content headings -->
-      <section class="gallery-container">
-        <div  itemprop="name" class="content-headings">
+      <section  itemprop="gallery" class="gallery-container">
+        <div class="content-headings">
           <h3>WELCOME TO OUR COFFEE HOUSE</h3>
           <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
         </div>
@@ -71,7 +71,7 @@
           </div>
         </div>
       </section>
-      <!-- a section about what the coffee shop offers/exlanation -->
+      <!-- a section about what the coffee shop offers/explanation -->
       <article class="cards-section">
         <h3  itemprop="name">WHAT WE OFFER</h3>
         <h2  itemprop="name">WHY VISIT US?</h2>
@@ -80,28 +80,28 @@
          <div class="fair-trade">
           <img src="./images/fair-trade.svg" alt="an icon showing fair trade">
          </div>
-        <h2>FAIR TRADE COFFEE</h2>
+        <h2 itemprop="heading">FAIR TRADE COFFEE</h2>
         <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
         </div>
         <div class="card-2-container">
          <div class="baked-goods">
           <img src="./images/local-baked-goods.svg" alt="an icon of the local baked goods">
          </div>
-        <h2>LOCAL BAKED GOODS</h2>
+        <h2  itemprop="heading">LOCAL BAKED GOODS</h2>
         <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
         </div>
         <div class="card-3-container">
         <div class="made-love">
           <img src="./images/made-with-love.svg" alt="an svg icon showing the shop is made with love">
         </div>
-      <h2>MADE WITH LOVE</h2>
+      <h2  itemprop="heading" >MADE WITH LOVE</h2>
       <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
       </div>
       </section>
        
       <!-- Banner section with the menu and location of what the coffee shop offers -->
     </article>
-        <section class="content-container">
+        <section itemprop="photos" class="content-container">
           <div class="banner-sizes">
             <picture>
             <source srcset="./images/coffee-shop-1200x332.jpeg"
@@ -119,9 +119,7 @@
             <source srcset="./images/coffee-shop-320x320.jpeg"
             media="(min-width: 319px)" />
 
-          <img class="orig-img"
-         src="./images/coffee-shop.jpeg"
-         alt="the birds eye view of the coffee shop">
+          <img class="orig-img" src="./images/coffee-shop.jpeg" alt="the birds eye view of the coffee shop">
             </picture>
             <!-- have the button and headings float there on top of overlay -->
              <section class="secondary-content">
@@ -145,7 +143,7 @@
         </div>
         <div class="about-content">
           <h3  itemprop="about">ABOUT US</h3>
-          <h2  itemprop="story">READ OUR STORY</h2>
+          <h2  itemprop="heading">READ OUR STORY</h2>
           <p>
             In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.
 
@@ -163,18 +161,18 @@
         <section class="testimonial-cards">
         <div id="test-card-1" class="test-card-1">
           <img src="./images/testimonial-1.jpeg" alt="a person sipping her coffee/latte">
-          <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."
-          Jane D., Toronto</p>
+          <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+         <p>Jane D., Toronto</p>
         </div>
         <div id="test-card-2" class="test-card-2">
           <img src="./images/testimonial-2.jpeg" alt="a person smiling while on their laptop">
-          <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."
-          Scott S., Ottawa</p>
+          <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+          <p>Scott S., Ottawa</p>
           </div>
           <div id="test-card-3" class="test-card-3">
           <img src="./images/testimonial-3.jpeg" alt="a person drinking their iced coffee">
-          <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."
-          Susie F., Ottawa </p>
+          <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+         <p>Susie F., Ottawa </p>
         </div>
         </section>
       </article>
