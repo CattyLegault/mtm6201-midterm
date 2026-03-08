@@ -209,9 +209,8 @@ p {
   color: white;
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: medium;
-  font-style: bold;
+  font-weight: 800;
+  font-size: small;
   padding: 1rem;
   margin: 0; 
 }
@@ -598,7 +597,7 @@ p {
 .test-card-1 p {
   position: absolute;
   color: white;
-  top: 87%;
+  top: 80%;
   left: 35%;
   font-size: large;
   transform: translate(-50%, -50%);
@@ -607,16 +606,16 @@ p {
 
 .test-card-1 p:last-child {
   color: #d69e3d;
-  top: 94%;
-  left: 17%;
+  top: 90%;
+  left: 20%;
   font-size: x-large;
 }
 
 .test-card-2 p {
   position: absolute;
   color: white;
-  top: 87%;
-  left: 35%;
+  top: 80%;
+  left: 36%;
   font-size: large;
   transform: translate(-50%, -50%);
   line-height: 1.4;
@@ -624,15 +623,15 @@ p {
 
 .test-card-2 p:last-child {
   color: #d69e3d;
-  top: 95%;
-  left: 17%;
+  top: 92%;
+  left: 23%;
   font-size: x-large;
 }
 
 .test-card-3 p {
   position: absolute;
   color: white;
-  top: 89%;
+  top: 82%;
   left: 35%;
   font-size: large;
   transform: translate(-50%, -50%);
@@ -641,8 +640,8 @@ p {
 
 .test-card-3 p:last-child {
   color: #d69e3d;
-  top: 94%;
-  left: 17%;
+  top: 92%;
+  left: 20%;
   font-size: x-large;
 }
 
@@ -897,12 +896,24 @@ p {
       }
 
       .main-nav ul li a {
-        display: flex;
-        font-size: small;
-        justify-content: flex-end;
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: small;
+      font-style: bold;
+      padding: 1rem;
+      margin-right: 2rem; 
       }
 
-      /* fix the hero banner and content */
+     .main-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      justify-content: flex-end;
+      }   
 
       /* adjust gallery padding */
       .gallery {
