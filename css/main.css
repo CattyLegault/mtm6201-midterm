@@ -431,11 +431,11 @@ p {
 }
 
 /* menu and location styling */
-img{
+/* img{
   width: 100%;
-}
+} */
 .banner-sizes {
-  width: 100vh;
+  width: 100%;
   position: relative;
   background-size: cover;
   background-position: center;
