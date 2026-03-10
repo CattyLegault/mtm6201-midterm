@@ -431,7 +431,9 @@ p {
 }
 
 /* menu and location styling */
-
+img{
+  width: 100%;
+}
 .banner-sizes {
   width: 100vh;
   position: relative;
@@ -944,7 +946,9 @@ p {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 2rem;
+    margin: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 2rem;
   }
 
@@ -1001,6 +1005,14 @@ p {
 
   .secondary-content h3 {
     font-size: medium;
+  }
+
+  .secondary-content h2 {
+    padding: 0;
+  }
+
+  .secondary-content {
+    padding-top: 2rem;
   }
 
   /* adjust the about us section*/
