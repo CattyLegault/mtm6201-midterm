@@ -135,6 +135,10 @@ body {
 
 /* start adding variables */
 
+:root {
+  --h3-color: #d69e3d;
+}
+
 .site-header {
   background-color: black;
 }
@@ -307,7 +311,7 @@ p {
 }
 
 .content-headings h3 {
-  color: #d69e3d;
+  color: var(--h3-color);
   padding-bottom: 1rem;
   padding-top: 3rem;
   margin-left: 0.5rem;
@@ -355,7 +359,7 @@ p {
 
 .cards-section h3 {
   padding-top: 3rem;
-  color: #d69e3d;
+  color: var(--h3-color);
   font-size: large;
   text-align: center;
 }
@@ -479,7 +483,7 @@ p {
 }
 
 .location h3 {
-  color: #d69e3d;
+  color: var(--h3-color);
   font-size: large;
 }
 
@@ -488,7 +492,7 @@ p {
 }
 
 .menu h3 {
-  color: #d69e3d;
+  color: var(--h3-color);
   font-size: large;
 }
 
@@ -521,7 +525,7 @@ p {
 
 .about-content h3 {
   padding-top: 3rem;
-  color: #d69e3d;
+  color: var(--h3-color);
   font-size: large;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -582,7 +586,7 @@ p {
 
 .testimonials h3 {
   padding-top: 2rem;
-  color: #d69e3d;
+  color: var(--h3-color);
   font-size: large;
   padding-bottom: 1rem;
   margin-left: 1rem;
