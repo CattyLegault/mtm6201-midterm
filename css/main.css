@@ -130,13 +130,14 @@ table {
 
 /* background color and heading color/content */
 body {
-  background-color: #f3f0e9;
+  background-color: var(--background-color);
 }
 
 /* start adding variables */
 
 :root {
   --h3-color: #d69e3d;
+  --background-color: #f3f0e9;
 }
 
 .site-header {
