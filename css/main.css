@@ -1062,6 +1062,10 @@ p {
     left: 5%;
   }
 
+  .menu-button {
+  padding-top: 2rem;
+}
+
   /* adjust the about us section*/
   .about-img {
     padding-top: 3rem;
