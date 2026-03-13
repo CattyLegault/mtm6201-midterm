@@ -388,21 +388,21 @@ p {
 .fair-trade {
   width: 30%;
   display: flex;
-  justify-self: anchor-center;
+  justify-self: center;
   padding: 1rem;
 }
 
 .baked-goods {
   width: 30%;
   display: flex;
-  justify-self: anchor-center;
+  justify-self: center;
   padding: 1rem;
 }
 
 .made-love {
   width: 30%;
   display: flex;
-  justify-self: anchor-center;
+  justify-self: center;
   padding: 1rem;
 }
 
@@ -931,7 +931,6 @@ p {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: small;
-    font-style: bold;
     padding: 1rem;
     margin-right: 2rem;
   }
@@ -990,21 +989,21 @@ p {
   .fair-trade {
     width: 27%;
     display: flex;
-    justify-self: anchor-center;
+    justify-self: center;
     padding: 1rem;
   }
 
   .baked-goods {
     width: 27%;
     display: flex;
-    justify-self: anchor-center;
+    justify-self: center;
     padding: 1rem;
   }
 
   .made-love {
     width: 27%;
     display: flex;
-    justify-self: anchor-center;
+    justify-self: center;
     padding: 1rem;
   }
 

@@ -6,7 +6,7 @@
     <title>Cat Legault - Midterm</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- fonnt families to use -->
+    <!-- font families to use -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,19 +15,21 @@
   </head>
   <body>
     <!-- header and skip links along with the svg of the logo, making it responsive-->
-    <header itemprop="header">
+    <header>
       <div class="container">
         <nav class="skip-links">
-          <li><a href="#nav" id="nav"></a>Skip to nav</li>
-          <li><a href="#main" id="main"></a>Skip to main content</li>
+          <ul>
+            <li><a href="#nav" id="nav"></a>Skip to nav</li>
+            <li><a href="#main" id="main-content"></a>Skip to main content</li>
+          </ul>
         </nav>
       </div>
-      <div role="header" class="site-header">
+      <div class="site-header">
         <div class="logo-svg">
           <a href="#"><img src="./images/my-coffee-shop-logo.svg" alt="an svg logo of the coffee shop"></a>
         </div>
-        <nav itemprop="nav" role="navigation" class="main-nav">
-          <ul id="nav">
+        <nav class="main-nav">
+          <ul id="navigation">
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">MENU</a></li>
             <li><a href="#">LOCATIONS</a></li>
@@ -36,10 +38,10 @@
       </div>
     </header>
     <!-- displaying the main content with the hero banner - this also needs to be accessible -->
-    <main role="main" class="main-content">
-      <section itemprop="main" id="main">
+    <main class="main-content">
+      <section id="main">
         <div class="hero-banner" role="banner">
-          <div itemprop="name" class="hero-content">
+          <div class="hero-content">
           <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
           <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
           <button class="hero-button" aria-label="send" role="button" type="submit">
@@ -48,7 +50,7 @@
         </div>
       </section>
       <!-- gallery of images along with the content headings -->
-      <section  itemprop="gallery" class="gallery-container">
+      <section class="gallery-container">
         <div class="content-headings">
           <h3>WELCOME TO OUR COFFEE HOUSE</h3>
           <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
@@ -73,35 +75,35 @@
       </section>
       <!-- a section about what the coffee shop offers/explanation -->
       <article class="cards-section">
-        <h3  itemprop="name">WHAT WE OFFER</h3>
-        <h2  itemprop="name">WHY VISIT US?</h2>
+        <h3 >WHAT WE OFFER</h3>
+        <h2 >WHY VISIT US?</h2>
         <section role="contentinfo" class="cards">
         <div class="card-1-container">
          <div class="fair-trade">
           <img src="./images/fair-trade.svg" alt="an icon showing fair trade">
          </div>
-        <h2 itemprop="heading">FAIR TRADE COFFEE</h2>
+        <h2>FAIR TRADE COFFEE</h2>
         <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
         </div>
         <div class="card-2-container">
          <div class="baked-goods">
           <img src="./images/local-baked-goods.svg" alt="an icon of the local baked goods">
          </div>
-        <h2  itemprop="heading">LOCAL BAKED GOODS</h2>
+        <h2>LOCAL BAKED GOODS</h2>
         <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
         </div>
         <div class="card-3-container">
         <div class="made-love">
           <img src="./images/made-with-love.svg" alt="an svg icon showing the shop is made with love">
         </div>
-      <h2  itemprop="heading" >MADE WITH LOVE</h2>
+      <h2>MADE WITH LOVE</h2>
       <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
       </div>
       </section>
        
       <!-- Banner section with the menu and location of what the coffee shop offers -->
     </article>
-        <section itemprop="photos" class="content-container">
+        <section class="content-container">
           <div class="banner-sizes">
             <picture>
             <source srcset="./images/coffee-shop-1200x332.jpeg"
@@ -124,26 +126,26 @@
             <!-- have the button and headings float there on top of overlay -->
              <section class="secondary-content">
             <div class="menu">
-            <h3  itemprop="menu">OUR MENU</h3>
-            <h2  itemprop="heading">EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
+            <h3>OUR MENU</h3>
+            <h2>EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
             <button role="button" class="menu-button">EXPLORE OUR MENU</button>
           </div>
           <div class="location">
-            <h3 itemprop="location">LOCATIONS</h3>
-            <h2  itemprop="heading">FIND YOUR NEAREST COFFEE SHOP</h2>
+            <h3>LOCATIONS</h3>
+            <h2>FIND YOUR NEAREST COFFEE SHOP</h2>
             <button role="button" class="menu-button">VIEW LOCATIONS</button>
           </div>
+          </section>
           </div>
           </section>
-        </section>
         <!-- This is the about section for the coffee shop -->
         <section id="about" class="about-container">
         <div class="about-img">
           <img src="./images/about-us.jpeg" alt="Employees smiling while making coffee" />
         </div>
         <div class="about-content">
-          <h3  itemprop="about">ABOUT US</h3>
-          <h2  itemprop="heading">READ OUR STORY</h2>
+          <h3>ABOUT US</h3>
+          <h2>READ OUR STORY</h2>
           <p>
             In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
             <br>
@@ -155,8 +157,8 @@
       </section>
       <!-- this section will be where the testimonials are with each card explanation -->
       <article class="testimonials">
-        <h3  itemprop="testimonials">TESTIMONIALS</h3>
-        <h2  itemprop="heading">WHAT OUR CUSTOMERS SAY ABOUT US</h2>
+        <h3>TESTIMONIALS</h3>
+        <h2>WHAT OUR CUSTOMERS SAY ABOUT US</h2>
         <section class="testimonial-cards">
         <div id="test-card-1" class="test-card-1">
           <img src="./images/testimonial-1.jpeg" alt="a person sipping her coffee/latte">
@@ -176,7 +178,7 @@
         </section>
       </article>
       <!-- main footer section -->
-      <footer  itemprop="footer" class="footer-content">© My Coffee Company 2024</footer>
+      <footer class="footer-content">© My Coffee Company 2024</footer>
     </main>
   </body>
 </html>
