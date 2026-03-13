@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- header and skip links along with the svg of the logo, making it responsive-->
-    <header id="header">
+    <header aria-roledescription="main-header" id="header">
       <div class="container">
         <nav class="skip-links">
           <ul>
@@ -28,7 +28,7 @@
         <div class="logo-svg">
           <a href="#"><img src="./images/my-coffee-shop-logo.svg" alt="an svg logo of the coffee shop"></a>
         </div>
-        <nav class="main-nav">
+        <nav role="navigation" class="main-nav">
           <ul id="navigation">
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">MENU</a></li>
@@ -38,22 +38,24 @@
       </div>
     </header>
     <!-- displaying the main content with the hero banner - this also needs to be accessible -->
-    <main class="main-content">
+    <main role="main" class="main-content">
       <section id="main">
         <div class="hero-banner" role="banner">
           <div class="hero-content">
-          <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
+          <h1 aria-level="1" aria-label="heading" role="heading">EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
           <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-          <button class="hero-button" aria-label="send" role="button" type="submit">
-            EXPLORE OUR MENU</button>
+            <div  class="hero-button">
+              <a href="#" aria-label="explore-our-menu" role="button" type="submit">
+            EXPLORE OUR MENU</a>
+            </div>
           </div>
         </div>
       </section>
       <!-- gallery of images along with the content headings -->
       <section class="gallery-container">
         <div class="content-headings">
-          <h3>WELCOME TO OUR COFFEE HOUSE</h3>
-          <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
+          <h3 aria-level="3" aria-label="heading">WELCOME TO OUR COFFEE HOUSE</h3>
+          <h2 aria-level="2" aria-label="heading">EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
         </div>
         <div class="gallery">
         <div class="latte">
@@ -72,37 +74,36 @@
           <img src="./images/smiling-employee.jpeg" alt="hot frothing milk being poured into a cup to make a latte"/>
           </div>
         </div>
-      </section>
+        </section>
       <!-- a section about what the coffee shop offers/explanation -->
-      <article class="cards-section">
-        <h3 >WHAT WE OFFER</h3>
-        <h2 >WHY VISIT US?</h2>
+      <article role="article" class="cards-section">
+        <h3 aria-level="3" aria-label="heading">WHAT WE OFFER</h3>
+        <h2 aria-level="2" aria-label="heading">WHY VISIT US?</h2>
         <section role="contentinfo" class="cards">
         <div class="card-1-container">
          <div class="fair-trade">
           <img src="./images/fair-trade.svg" alt="an icon showing fair trade">
          </div>
-        <h2>FAIR TRADE COFFEE</h2>
+        <h2 aria-level="2" aria-label="heading">FAIR TRADE COFFEE</h2>
         <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
         </div>
         <div class="card-2-container">
          <div class="baked-goods">
           <img src="./images/local-baked-goods.svg" alt="an icon of the local baked goods">
          </div>
-        <h2>LOCAL BAKED GOODS</h2>
+        <h2 aria-level="2" aria-label="heading">LOCAL BAKED GOODS</h2>
         <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
         </div>
         <div class="card-3-container">
         <div class="made-love">
           <img src="./images/made-with-love.svg" alt="an svg icon showing the shop is made with love">
         </div>
-      <h2>MADE WITH LOVE</h2>
+      <h2 aria-level="2" aria-label="heading">MADE WITH LOVE</h2>
       <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
       </div>
       </section>
-       
+      </article>
       <!-- Banner section with the menu and location of what the coffee shop offers -->
-    </article>
         <section class="content-container">
           <div class="banner-sizes">
             <picture>
@@ -119,61 +120,65 @@
             media="(min-width: 320px)" />
 
             <source srcset="./images/coffee-shop-320x320.jpeg"
-            media="(min-width: 319px)" />
+            media="(min-width: 280px)" />
 
           <img class="orig-img" src="./images/coffee-shop.jpeg" alt="the birds eye view of the coffee shop">
             </picture>
             <!-- have the button and headings float there on top of overlay -->
              <section class="secondary-content">
             <div class="menu">
-            <h3>OUR MENU</h3>
-            <h2>EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
-            <button role="button" class="menu-button">EXPLORE OUR MENU</button>
+            <h3 aria-level="3" aria-label="heading">OUR MENU</h3>
+            <h2 aria-level="2" aria-label="heading">EXPLORE WHAT WE HAVE TO OFFER YOU</h2>
+            <div class="menu-button">
+              <a href="#" aria-label="Explore-our-menu">EXPLORE OUR MENU</a>
+            </div>
           </div>
           <div class="location">
-            <h3>LOCATIONS</h3>
-            <h2>FIND YOUR NEAREST COFFEE SHOP</h2>
-            <button role="button" class="menu-button">VIEW LOCATIONS</button>
+            <h3 aria-level="3" aria-label="heading">LOCATIONS</h3>
+            <h2 aria-level="2" aria-label="heading">FIND YOUR NEAREST COFFEE SHOP</h2>
+            <div class="menu-button">
+              <a href="#" aria-label="view-locations">VIEW LOCATIONS</a>
+            </div>
           </div>
           </section>
           </div>
-          </section>
+        </section>
         <!-- This is the about section for the coffee shop -->
         <section id="about" class="about-container">
         <div class="about-img">
           <img src="./images/about-us.jpeg" alt="Employees smiling while making coffee" />
         </div>
         <div class="about-content">
-          <h3>ABOUT US</h3>
-          <h2>READ OUR STORY</h2>
+          <h3 aria-level="3" aria-label="heading">ABOUT US</h3>
+          <h2 aria-level="2" aria-label="heading">READ OUR STORY</h2>
           <p>
             In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
             <br>
           <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
           <div class="button-area">
-          <button role="button" class="learn-button">LEARN MORE</button>
+            <a class="learn-button" href="#" aria-label="learn more">LEARN MORE</a>
           </div>
         </div>
       </section>
       <!-- this section will be where the testimonials are with each card explanation -->
-      <article class="testimonials">
-        <h3>TESTIMONIALS</h3>
-        <h2>WHAT OUR CUSTOMERS SAY ABOUT US</h2>
+      <article role="article" class="testimonials">
+        <h3 aria-level="3" aria-label="heading">TESTIMONIALS</h3>
+        <h2 aria-level="2" aria-label="heading">WHAT OUR CUSTOMERS SAY ABOUT US</h2>
         <section class="testimonial-cards">
-        <div id="test-card-1" class="test-card-1">
+        <div  itemscope itemtype ="https://schema.org/Movie" id="test-card-1" class="test-card-1">
           <img src="./images/testimonial-1.jpeg" alt="a person sipping her coffee/latte">
           <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-         <p>Jane D., Toronto</p>
+         <p itemprop="name">Jane D., Toronto</p>
         </div>
-        <div id="test-card-2" class="test-card-2">
+        <div itemscope itemtype ="https://schema.org/Movie" id="test-card-2" class="test-card-2">
           <img src="./images/testimonial-2.jpeg" alt="a person smiling while on their laptop">
           <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-          <p>Scott S., Ottawa</p>
+          <p itemprop="name">Scott S., Ottawa</p>
           </div>
-          <div id="test-card-3" class="test-card-3">
+          <div  itemscope itemtype ="https://schema.org/Movie" id="test-card-3" class="test-card-3">
           <img src="./images/testimonial-3.jpeg" alt="a person drinking their iced coffee">
           <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-         <p>Susie F., Ottawa </p>
+         <p itemprop="name">Susie F., Ottawa </p>
         </div>
         </section>
       </article>

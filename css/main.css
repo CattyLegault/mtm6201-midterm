@@ -268,28 +268,37 @@ p {
   top: 50%;
   left: 50%;
   margin-right: 0.25rem;
+  padding-bottom: 1rem;
   line-height: 1.4;
   transform: translate(-50%, -50%);
   color: white;
 }
 
 .hero-button {
+  padding-top: 3rem;
+}
+
+.hero-button a {
   background-color: black;
-  color: white;
+   color: white;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  list-style: none;
   margin-top: 1rem;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1rem;
   border: none;
   font-weight: 600;
   transition: 0.3s;
 }
 
-.hero-button:hover {
+.hero-button a:hover {
   background-color: white;
   color: black;
+  text-decoration: underline;
   transform: scale(1.2);
 }
 
-.hero-button:active {
+.hero-button a:active {
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -437,12 +446,11 @@ p {
   padding-bottom: 1rem;
 }
 
-/* menu and location styling */
-/* img{
+.banner-sizes img {
   width: 100%;
-} */
+}
+
 .banner-sizes {
-  width: 100%;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -464,10 +472,11 @@ p {
   text-align: center;
   font-weight: 800;
   margin-right: 1rem;
-  bottom: 15%;
-  right: 10%;
+  bottom: 10%;
+  right: 12%;
+  left: 10%;
   color: white;
-  line-height: 1.5;
+  line-height: 1.4;
   padding-top: 1rem;
 }
 
@@ -498,8 +507,14 @@ p {
 }
 
 .menu-button {
+  padding-top: 1rem;
+}
+
+.menu-button a {
   background-color: white;
   color: black;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
   padding: 1rem;
   font-size: large;
   font-weight: 600;
@@ -507,10 +522,18 @@ p {
   transition: 0.2s;
 }
 
-.menu-button:hover {
+.menu-button a:hover {
   color: white;
-  background-color: transparent;
+  text-decoration: underline;
+  background-color: #966f2c;
   border: 3px solid white;
+  transform: scale(1.2);
+}
+
+.menu-button a:active {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
   transform: scale(1.1);
 }
 
@@ -551,22 +574,26 @@ p {
 }
 
 .button-area {
-  padding-bottom: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .learn-button {
   background-color: black;
+  text-decoration: none;
   color: white;
   padding: 1rem;
   margin: 1rem;
   border: none;
   font-weight: 800;
   transition: 0.2s;
+  font-family: "Lato", sans-serif;
 }
 
 .learn-button:hover {
   background-color: white;
   color: black;
+  text-decoration: underline;
   border: 2px solid #d69e3d;
   transform: scale(1.2);
 }
@@ -574,6 +601,7 @@ p {
 .learn-button:active {
   background-color: transparent;
   color: black;
+  text-decoration: underline;
   border: 2px solid #d69e3d;
   transform: scale(1.1);
 }
@@ -582,6 +610,7 @@ p {
 
 .testimonials {
   padding-top: 3rem;
+  padding-bottom: 1rem;
   background-color: black;
 }
 
@@ -798,6 +827,16 @@ p {
     margin: 0;
     padding-top: 0.25rem;
   }
+
+  /* adjust the banner with secondary content */
+
+  .secondary-content {
+    bottom: 30%;
+    right: 10%;
+    left: 5%;
+  }
+
+  /* adjust testimonials sizing */
 
   .test-card-1 p {
     position: absolute;
@@ -1018,7 +1057,9 @@ p {
   }
 
   .secondary-content {
-    padding-top: 2rem;
+    bottom: 25%;
+    right: 10%;
+    left: 5%;
   }
 
   /* adjust the about us section*/
