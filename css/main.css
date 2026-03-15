@@ -136,7 +136,7 @@ body {
 /* start adding variables */
 
 :root {
-  --h3-color: #d69e3d;
+  --h2-color: #d69e3d;
   --background-color: #f3f0e9;
 }
 
@@ -280,7 +280,7 @@ p {
 
 .hero-button a {
   background-color: black;
-   color: white;
+  color: white;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   list-style: none;
@@ -305,6 +305,13 @@ p {
   transform: scale(1.1);
 }
 
+  /* Hero content fix */
+
+  .hero-content h1 {
+  padding: 0;
+  margin: 0;
+  }
+
 /* gallery section to be styled */
 
 .gallery-container {
@@ -320,19 +327,21 @@ p {
   padding-top: 2rem;
 }
 
-.content-headings h3 {
-  color: var(--h3-color);
+.content-headings h2 {
+  color: var(--h2-color);
   padding-bottom: 1rem;
   padding-top: 3rem;
   margin-left: 0.5rem;
-  font-size: large;
+  font-size: medium;
+  font-weight: 400;
 }
 
-.content-headings h2 {
-  font-weight: 800;
+.content-headings h3 {
+  font-weight: 700;
   padding-bottom: 2rem;
   margin-left: 0.5rem;
-  margin-right: 10rem;
+  margin-right: 9rem;
+  font-size: x-large;
 }
 
 .gallery {
@@ -367,14 +376,14 @@ p {
 
 /* svg card section to be styled */
 
-.cards-section h3 {
+.cards-section h2 {
   padding-top: 3rem;
-  color: var(--h3-color);
+  color: var(--h2-color);
   font-size: large;
   text-align: center;
 }
 
-.cards-section h2 {
+.cards-section h3 {
   text-align: center;
   font-weight: 700;
   padding-bottom: 2rem;
@@ -389,7 +398,7 @@ p {
   margin: 1rem;
 }
 
-.cards h2 {
+.cards h3 {
   font-size: xx-large;
   padding: 0.5rem;
 }
@@ -399,6 +408,33 @@ p {
   display: flex;
   justify-self: center;
   padding: 1rem;
+}
+
+.card-1-container h4 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+.card-2-container h4 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+.card-3-container h4 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
 }
 
 .baked-goods {
@@ -484,7 +520,7 @@ p {
   padding-bottom: 3rem;
 }
 
-.menu h2 {
+.menu h3 {
   padding-bottom: 2rem;
 }
 
@@ -492,17 +528,17 @@ p {
   padding-top: 0.75rem;
 }
 
-.location h3 {
-  color: var(--h3-color);
+.location h2 {
+  color: var(--h2-color);
   font-size: large;
 }
 
-.location h2 {
+.location h3 {
   padding-bottom: 2rem;
 }
 
-.menu h3 {
-  color: var(--h3-color);
+.menu h2 {
+  color: var(--h2-color);
   font-size: large;
 }
 
@@ -547,17 +583,19 @@ p {
   margin: 1rem;
 }
 
-.about-content h3 {
-  padding-top: 3rem;
-  color: var(--h3-color);
+.about-content h2 {
+  padding-top: 1rem;
+  color: var(--h2-color);
   font-size: large;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
 }
 
-.about-content h2 {
+.about-content h3 {
   padding-bottom: 1rem;
   margin-left: 1rem;
+  font-size: xx-large;
+  font-weight: 800;
 }
 
 .about-content p {
@@ -616,7 +654,7 @@ p {
 
 .testimonials h3 {
   padding-top: 2rem;
-  color: var(--h3-color);
+  color: var(--h2-color);
   font-size: large;
   padding-bottom: 1rem;
   margin-left: 1rem;
@@ -761,6 +799,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+
   /* adjust gallery layout */
   .gallery {
     display: grid;
@@ -933,6 +972,21 @@ p {
     font-size: small;
   }
 
+  .about-content h2 {
+  padding-top: 1rem;
+  color: var(--h2-color);
+  font-size: large;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+  .about-content h3 {
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: x-large;
+  font-weight: 800;
+}
+
   /* scaling the testimonials */
 
   .testimonial-cards {
@@ -982,6 +1036,30 @@ p {
     justify-content: flex-end;
   }
 
+  /* hero banner content fix */
+
+  .hero-content p {
+    font-size: smaller;
+    margin: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .hero-button {
+    margin-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-content h1 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  }
+
+  .hero-button a {
+    font-size: small;
+  }
+
   /* adjust gallery padding */
   .gallery {
     padding: 2rem;
@@ -992,13 +1070,37 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-bottom: 2rem;
   }
 
+  .cards-section h2 {
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--h2-color);
+  }
+
   .cards-section h3 {
-    font-size: medium;
+    font-size: xx-large;
+    padding: 0;
+    color: black;
+  }
+
+  .card-1-container h2 {
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  .card-2-container h2 {
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  .card-3-container h2 {
+    font-size: x-large;
+    font-weight: 600;
   }
 
   .card-3-container p {
@@ -1082,9 +1184,40 @@ p {
     font-size: medium;
   }
 
+  .about-content h2 {
+  padding-top: 1rem;
+  color: var(--h2-color);
+  font-size: large;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.about-content h3 {
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
   /* adjust the testimonials section */
   .testimonials {
     padding: 3rem;
+  }
+
+  .testimonials h2 {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-weight: 400;
+    color: var(--h2-color)
+  }
+
+  .testimonials h3 {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
   }
 
   .test-card-1 p {
